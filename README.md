@@ -1,7 +1,7 @@
-#			 Scala TKO development 
+#			 ScalaProust development 
 
 
-This is Scala TKO, a software transactional memory library.
+This is ScalaProust, a software transactional memory library.
 
 ## SUMMARY
 
@@ -60,7 +60,3 @@ If you want to run the some benchamrks on GridEngine:
    $ cd tmp
    # Fill in the number of jobs
    $ qsub -t 1-165 -l short -pe smp 32 -q '*@@mblade12' -cwd ../bench/gridenginetask.sh
-
-## NOTICE
-
-An older version of this code which may result in **deadlocks** can be found at the original [repository](https://bitbucket.org/mherlihy/tko).
