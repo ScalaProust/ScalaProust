@@ -1,0 +1,22 @@
+set terminal pngcairo size 600,100 enhanced font 'Verdana,10'
+set termoption dash
+set notitle
+set noborder
+set noxtics
+set noytics
+set noxlabel
+set noylabel
+set xrange[-10:10]
+set yrange[-10:10]
+set output "key-only.png"
+set linetype 1 lw 1 lc rgb "blue" pointtype 4
+set linetype 2 lw 1 lc rgb "forest-green" pointtype 5
+set linetype 3 lw 1 lc rgb "purple" pointtype 6
+set linetype 4 lw 1 lc rgb "orange" pointtype 7
+set linetype 5 lw 1 lc rgb "red" pointtype 8
+set key on inside center center horizontal title "Legend"
+plot    20 title 'Traditional' with linespoints lt 1, \
+   20 title 'Predication' with linespoints lt 2, \
+   20 title 'Proust[Lazy/Opt]-TrieMap' with linespoints lt 4, \
+   20 title 'Proust[Eager/Opt]-TrieMap' with linespoints lt 5, \
+   20 title 'Proust[Eager/Pess]-TrieMap' with linespoints lt 3, \

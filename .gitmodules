@@ -1,0 +1,3 @@
+[submodule "deps/scala-stm"]
+	path = deps/scala-stm
+	url = git@github.com:ScalaProust/scala-stm.git
